@@ -1,0 +1,160 @@
+/* Fonts & Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --primary: #6C63FF;
+  --secondary: #D5D8FF;
+  --bg: #f9f9ff;
+  --dark: #333;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--white);
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav-links a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, var(--primary), #8c85ff);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero .profile-img {
+  width: 140px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.btn, .btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn { background: var(--white); color: var(--primary); }
+.btn-secondary { background: transparent; border: 2px solid var(--white); color: var(--white); }
+
+/* Skills & Projects (Same as before but with images & buttons) */
+
+/* Scroll Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  padding: 10px 15px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--white);
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+.projects {
+  padding: 60px 20px;
+  background: #f4f4fa;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project-content p {
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn-small:hover {
+  background: #5a54d1;
+}

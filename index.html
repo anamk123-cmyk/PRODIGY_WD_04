@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Anam Kazi</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <img src="img.jpeg" alt="Profile Photo" class="profile-img" />
+      <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+      <p><span id="typing-text"></span></p>
+      <a href="resume.pdf" download class="btn">Download Resume</a>
+      <a href="#projects" class="btn-secondary">My Work</a>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a creative web developer passionate about designing and developing user-friendly websites. I enjoy combining aesthetics with functionality.
+    </p>
+    <div class="about-cards">
+      <div class="card">
+        <h3>Education</h3>
+        <p>B.Sc.IT<br>K.C College, 2026</p>
+      </div>
+      <div class="card">
+        <h3>Experience</h3>
+        <p>Intern @ProdigyTech<br>Freelance Projects<br>Open Source Contributor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <ul class="skill-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>Node.js</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="p1.jpg" alt="Tic-Tac-Toe Web application">
+      <div class="project-content">
+        <h3>Tic-Tac-Toe Web App </h3>
+        <p>Responsive portfolio built with HTML, CSS, and JavaScript.</p>
+        <a href="#" class="btn-small">View</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="p2.jpg" alt="Stopwatch Web Application">
+      <div class="project-content">
+        <h3>Stopwatch Web App</h3>
+        <p>Interactive stopwatch app with reset and other features.</p>
+        <a href="#" class="btn-small">View</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="p3.jpg" alt="Responsive Landing Page">
+      <div class="project-content">
+        <h3>Responsive Landing Page</h3>
+        <p>Clean landing page with HTML user friendly gui.</p>
+        <a href="#" class="btn-small">View</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Anam Kazi | Built with 💙</p>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
